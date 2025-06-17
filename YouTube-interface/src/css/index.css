@@ -1,0 +1,192 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box; /* Adicionado para melhor controle de box model */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Certifique-se de importar a fonte no HTML */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinhamento vertical */
+    margin: 10px 25px 0;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li {
+    padding: 10px;
+}
+
+/* Busca */
+.busca {
+    display: flex;
+    align-items: center; /* Alinha input e botão verticalmente */
+}
+
+.busca input {
+    height: 30px;
+    width: 348px;
+    border: 1px solid #ccc;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.busca button {
+    height: 34px;
+    width: 50px;
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+/* Hover */
+.header ul:hover,
+button:hover {
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    display: flex;
+    gap: 20px; /* Espaçamento entre container e nav */
+    padding: 25px 75px 0 75px;
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+/* Container principal */
+.conteiner {
+    flex: 1 1 60%; /* Flex-grow, flex-shrink, base width */
+    max-width: 952px;
+}
+
+/* Vídeo */
+.video iframe {
+    width: 100%; /* Responsivo */
+    height: 100%; /* Responsivo */
+    aspect-ratio: 16 / 9; /* Mantém proporção */
+}
+
+.video h1 {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+/* Opções abaixo do vídeo */
+.opcao ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -18px;
+}
+
+.opcao li {
+    display: flex;
+    align-items: center;
+}
+
+.opcao p {
+    margin-left: -35px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.opcao p span {
+    font-weight: normal;
+}
+
+.opcao .logo-video {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 48px;
+    c: 48px;
+    object-fit: cover;
+}
+
+.opcao .inscreva {
+    width: 159px;
+    border-radius: 2px;
+}
+
+.opcao .like {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.opcao:hover {
+    cursor: pointer;
+}
+
+/* Descrição e visualizações */
+.conteiner > div:nth-child(3) h2 {
+    font-size: 14px;
+    margin-top: 10px;
+    max-width: 391px;
+}
+
+.descricao {
+    font-size: 14px;
+    max-width: 510px;
+    margin-top: 10px;
+}
+
+/* Navegação lateral */
+.nav {
+    flex: 1 1 30vw;
+    max-height: 90vh;
+    overflow-y: auto; /* Scroll se necessário */
+}
+
+.nav ul li {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.nav div h3,
+.nav div p {
+    margin-left: 0;
+}
+
+.nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Logo usuário */
+.logo {
+    max-width: 25px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .conteiner, .nav {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .opcao ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .busca input {
+        width: 100%;
+    }
+}
