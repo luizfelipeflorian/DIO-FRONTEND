@@ -1,4 +1,4 @@
-<img src=".github/image.png"></a>
+<img src="github/image.png"></a>
 
 # Desafio Classificador de Nível de Herói
 
