@@ -94,7 +94,7 @@ header img{
 }
 
 header img:hover {
-    transform: scale(1.2); 
+    transform: scale(10); 
 }
 
 header h1 {

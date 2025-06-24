@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #34343548;
+    background-color: #ff0000;
     overflow-x: hidden;
 }
 
@@ -12,9 +12,9 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #a7a1a1;
-    border: 1px solid;
-    border-color: #a7a1a105;
+    background-color: #dcd7d6;
+    border: 10px solid;
+    border-color: #CC0000;
 }
 
 @media screen and (min-width: 992px) {
